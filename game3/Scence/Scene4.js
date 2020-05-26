@@ -2,7 +2,6 @@ var bar = [];
 var barwithborder = [];
 var number_of_bar;
 var ball = [];
-var switch_scene = 0;
 var element2;
 var display_on;
 var speed = 4;

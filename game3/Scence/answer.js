@@ -1,6 +1,6 @@
 var border = 0;
 var display_on = 0;
-
+var switch_scene = 0;
 
 function myFunction1() {
     document.getElementById('answer2').focus();

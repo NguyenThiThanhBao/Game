@@ -2,7 +2,6 @@ var bar = [];
 var barwithborder = [];
 var number_of_bar;
 var ball = [];
-var switch_scene = 0;
 var element1;
 var bar_unclear = [];
 var display_on;
