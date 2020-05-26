@@ -1,0 +1,103 @@
+            * {
+                margin: 0px;
+                padding: 0px;
+                border: none;
+            }
+            
+            .backgr_cell {
+                width: 100%;
+                height: 100%;
+                background-image: url("./images/cell.png");
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            
+            .backgr_color {
+                background-image: url('./images/background1.jpg');
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            
+            .backgr_stuff {
+                width: 100%;
+                height: 100%;
+                background-image: url("./images/stuff.png");
+                background-repeat: repeat;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            
+            .backgr_bg1 {
+                width: 100%;
+                height: 100%;
+                background-image: url("./images/color.png");
+                background-repeat: repeat;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            
+            .container {
+                background-position: center;
+            }
+            
+            #phaserGame {
+                width: 1000px;
+                height: 600px;
+                position: relative;
+                margin: auto;
+                margin-top: 20px;
+            }
+            
+            #pg {
+                width: 1000px;
+                height: 45px;
+                border-bottom: 1px solid #EDEDED;
+                position: absolute;
+            }
+            
+            .icon {
+                border: solid darkcyan;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                margin-left: 20px;
+                margin-top: 3px;
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+            
+            .icon:hover {
+                border: solid blue;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 3px;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                margin-left: 20px;
+                margin-top: 3px;
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+            
+            #back {
+                font-size: 22px;
+                font-family: Arial;
+                margin-left: 10px;
+                margin-top: 10px;
+                position: absolute;
+                color: darkcyan;
+            }
+            
+            #back:hover {
+                color: blue;
+            }
