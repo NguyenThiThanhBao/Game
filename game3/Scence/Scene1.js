@@ -32,7 +32,7 @@ class Scene1 extends Phaser.Scene {
 
     }
     createBall() {
-        for (var i = 6; i >= 1; i--) {
+        for (let i = 6; i >= 1; i--) {
             ball[i] = this.add.image(280 + (6 - i) * 26, 25, 'ball');
         }
     }
@@ -50,18 +50,18 @@ class Scene1 extends Phaser.Scene {
         }
 
         if (number_of_bar % 2 == 0) {
-            for (var i = 1; i <= number_of_bar; i++) {
+            for (let i = 1; i <= number_of_bar; i++) {
                 bar[i] = this.add.image(config.width / 2 + 18 - (number_of_bar - 1) * 36 + (i - 1) * 2 * 36, 275, 'bar');
             }
 
         }
         if (number_of_bar % 2 == 1) {
-            for (var i = 1; i <= number_of_bar; i++) {
+            for (let i = 1; i <= number_of_bar; i++) {
                 bar[i] = this.add.image(config.width / 2 - 18 - (number_of_bar - 1) * 36 + (i - 1) * 2 * 36, 275, 'bar');
             }
 
         }
-        for (var i = 1; i < number_of_bar; i++) {
+        for (let i = 1; i < number_of_bar; i++) {
             bar_unclear[i] = this.add.image(bar[i].x, bar[i].y, 'bar_unclear');
             barwithborder[i] = this.add.image(bar[i].x - 2, bar[i].y, 'barwithborder').setAlpha(0);
             barwithborder[number_of_bar] = this.add.image(bar[number_of_bar].x, bar[number_of_bar].y, 'barwithborder').setAlpha(0);
@@ -69,16 +69,16 @@ class Scene1 extends Phaser.Scene {
     }
     up() {
         if (display_on == 1) {
-            for (var i = 1; i < number_of_bar; i++) {
+            for (let i = 1; i < number_of_bar; i++) {
                 bar_unclear[i].destroy();
             }
         }
         if (border == 1) {
-            for (var i = 1; i <= number_of_bar; i++) {
+            for (let i = 1; i <= number_of_bar; i++) {
                 barwithborder[i].setAlpha(1);
             }
         } else {
-            for (var i = 1; i <= number_of_bar; i++) {
+            for (let i = 1; i <= number_of_bar; i++) {
                 barwithborder[i].setAlpha(0);
             }
         }
@@ -90,7 +90,7 @@ class Scene1 extends Phaser.Scene {
         this.barwithborder = [];
         this.number_of_bar = 0;
         switch_scene = 0;
-        border = 0;
+        this.border = 0;
         display_on = 0;
 
     }
