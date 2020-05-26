@@ -85,9 +85,9 @@ class Scene6 extends Phaser.Scene {
         this.bar_unclear = [];
         this.barwithborder = [];
         this.number_of_bar = 0;
-        switch_scene = 0;
-        border = 0;
-        display_on = 0;
+        this.switch_scene = 0;
+        this.border = 0;
+        this.display_on = 0;
     }
     update() {
         this.up();
